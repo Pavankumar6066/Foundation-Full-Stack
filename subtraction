@@ -1,0 +1,13 @@
+package subtraction;
+
+public class Sub {
+
+	public static void main(String[] args) {
+System.out.println("Welcome To Java Programming");
+byte a=10;int b=20;
+int sum=b-a;
+System.out.println("sum of a and b="+sum);
+
+	}
+
+}
