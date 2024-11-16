@@ -1,0 +1,15 @@
+package pavankumar;
+
+import java.util.*;
+
+public class Values {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		char c = (char)n;
+		System.out.println(c);
+
+	}
+
+}
