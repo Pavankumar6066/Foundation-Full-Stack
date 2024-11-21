@@ -1,0 +1,27 @@
+package pavankumar;
+
+import java.util.*;
+public class TrendyNumber {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num = input.nextInt();
+		int mid = 0;
+		
+		if(num >= 100 && num <= 999) {
+			mid = num/10;
+			mid = num%10;
+			if(mid % 3 == 0 ) {
+				System.out.println("it's trendy");
+			}
+			else {
+				System.out.println("it's not trendy");
+				
+			}
+			
+		}	
+		
+
+	}
+
+}
