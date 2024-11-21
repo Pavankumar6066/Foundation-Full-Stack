@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Checker {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		char alph = input.next().charAt(0);
+		
+		if ((alph >= 'a' && alph <= 'z') || (alph >= 'A' && alph <= 'Z')) {
+			alph = Character.toLowerCase(alph);
+			
+			if ((alph == 'a' || alph == 'e') || 
+					(alph == 'i' ||  alph == 'o' || alph == 'u' )) {
+				
+				System.out.println("Vowel");
+			}
+			else {
+				System.out.println("Consonant");
+			}
+		}
+		else {
+			System.out.println("Not an Alphabet");
+		}
+
+	}
+
+}
