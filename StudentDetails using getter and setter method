@@ -1,0 +1,48 @@
+
+package javabean;
+
+public class Student {
+	private String name;
+	private int age;
+	private String deprt;
+	
+	public Student(String name,int age,String dept) 
+	{
+		this.name = name;
+		this.age = age;
+		this.dept = deprt;	
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public int getAge()
+	{
+		return age;
+	}
+	public String getDeprt()
+	{
+		return dept;
+	}
+	public  void setName(String name)
+	{
+		this.name = name;
+	}
+	public void setAge(int age)
+	{
+		this.age =age;
+	}
+	public void setDept(String dept)
+	{
+		this.dept = deprt;
+	}
+	public static void main(String[] args) 
+	{
+		Student student = new Student("Rama",23,"MCA");
+
+		System.out.println("Name:"+ student.getName());
+		System.out.println("Age:"+ student.getAge());
+		System.out.println("Dept:"+ student.getDept());	
+	}
+	
+}
