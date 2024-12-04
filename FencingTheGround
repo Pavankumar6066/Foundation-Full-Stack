@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Area {
+	public static void main(String args[]){
+		Scanner input = new Scanner(System.in);
+		int length = input.nextInt();
+		int breadth = input.nextInt();
+		
+		int areaOfRectangle = length * breadth;
+		int perimeterOfRectangle = 2 * (length + breadth);
+		
+		
+		System.out.println("The required of length is " +areaOfRectangle + " m");
+		System.out.println("The required area of carpet is " + perimeterOfRectangle + " sqm");
+		
+	}
+
+}
