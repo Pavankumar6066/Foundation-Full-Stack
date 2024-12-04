@@ -1,0 +1,34 @@
+package JavaPackages;
+
+import java.util.Scanner;
+
+public class StrongNum {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num = input.nextInt();
+		
+		int sum = 0;
+		int temp = num;
+		
+		while( num != 0) {
+			int digit = num %10;
+			int factorial = 1;
+			for(int i=1; i<= digit ; i++) {
+				factorial = factorial *i;
+			}
+			sum = sum + factorial;
+			num = num /10;	
+		}
+		if (temp == sum)
+		{
+			System.out.println("Yes");
+		}
+		else 
+		{
+			System.out.println("No");
+		}
+
+	}
+
+}
