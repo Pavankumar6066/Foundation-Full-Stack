@@ -1,0 +1,25 @@
+package javabean;
+
+import java.util.*;
+
+public class Doller {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int doll1 = input.nextInt();
+		int cent1 = input.nextInt();
+		int doll2 = input.nextInt();
+		int cent2 = input.nextInt();
+		
+		
+		int sumDollars = (cent1 + cent2) / 100;
+		int sumCents = (cent1 + cent2) % 100;
+		
+		int totalDollars = (doll1 + doll2 ) + sumDollars;
+		
+
+		System.out.println(totalDollars + " " + sumCents );
+	}
+
+}
